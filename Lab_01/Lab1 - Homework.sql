@@ -41,8 +41,7 @@ SELECT KyNang.TenKyNang, ChuyenGia_KyNang.CapDo FROM ChuyenGia_KyNang
 INNER JOIN KyNang ON ChuyenGia_KyNang.MaKyNang = KyNang.MaKyNang;
 
 -- 64. Liệt kê mã chuyên gia và vai trò trong các dự án từ bảng ChuyenGia_DuAn.
-SELECT ChuyenGia.MaChuyenGia, ChuyenGia_DuAn.VaiTro FROM ChuyenGia_DuAn
-INNER JOIN ChuyenGia ON ChuyenGia_DuAn.MaChuyenGia = ChuyenGia.MaChuyenGia;
+SELECT MaChuyenGia, VaiTro FROM ChuyenGia_DuAn
 
 -- 65. Hiển thị họ tên và ngày sinh của các chuyên gia sinh năm 1990 trở về sau.
 SELECT HoTen, NgaySinh FROM ChuyenGia WHERE YEAR(NgaySinh) >= 1990;
