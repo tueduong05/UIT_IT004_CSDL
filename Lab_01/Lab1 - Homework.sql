@@ -62,7 +62,7 @@ SELECT TOP 5 HoTen, Email FROM ChuyenGia;
 SELECT TenCongTy FROM CongTy WHERE TenCongTy LIKE '%Tech%';
 
 -- 71. Hiển thị tên dự án và trạng thái, không bao gồm các dự án đã hoàn thành.
-SELECT TenDuAn, TrangThai FROM DuAn WHERE TrangThai != 'Hoàn thành';
+SELECT TenDuAn, TrangThai FROM DuAn WHERE TrangThai != N'Hoàn thành';
 
 -- 72. Liệt kê họ tên và chuyên ngành của các chuyên gia, sắp xếp theo chuyên ngành và họ tên.
 SELECT HoTen, ChuyenNganh FROM ChuyenGia ORDER BY ChuyenNganh, HoTen;
