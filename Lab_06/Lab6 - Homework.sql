@@ -219,7 +219,7 @@ BEGIN
         SELECT 1
         FROM ChuyenGia_DuAn
         WHERE MaDuAn = @MaDuAn
-        AND (NgayThamGia IS NULL OR NgayThamGia < GETDATE()) -- Giả định rằng ngày tham gia trống hoặc trong quá khứ có thể chỉ ra công việc chưa hoàn thành
+        AND (NgayThamGia IS NULL OR NgayThamGia < GETDATE())
     )
     BEGIN
         UPDATE DuAn
